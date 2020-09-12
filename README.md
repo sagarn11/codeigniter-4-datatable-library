@@ -11,7 +11,7 @@ Store Datatables.php file in Root_folder/app/Libraries Folder
 ## How to use
 
 ### Controller
-DO NOT CALL Query Builders `get()` here
+DO NOT CALL Query Builders `get()` before `generate_datatable()` function
 ```
 <?php
 namespace App\Controllers;
