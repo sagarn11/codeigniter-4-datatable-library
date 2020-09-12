@@ -11,6 +11,7 @@ Store Datatables.php file in Root_folder/app/Libraries Folder
 ## How to use
 
 ### Controller
+Using Codeigniter's provided Query Builder.
 DO NOT CALL Query Builders `get()` before `generate_datatable()` function
 ```
 <?php
