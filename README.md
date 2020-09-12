@@ -5,7 +5,7 @@ This repository is for codeigniter 4 datatables
 
 ## Instructions
 
-Store 
+Store Datatables.php file in Root_folder/app/Libraries Folder
 
 
 ## How to use
@@ -29,12 +29,12 @@ class User extends BaseController
 	{
 		$datatables = new Datatables;
 		$where = [
-			// 'username' => 'admin'
+			'username' => 'admin'
 		];
 		$varible = 'value';
 		$editColumn = [
-			'status' => ['helper_function' => 'numbs', 'args' => [['status'],[$varible, false]]],
-			'role_id' => ['helper_function' => 'role', 'args' => [['role_id']]],
+			'status' => ['helper_function' => 'get_status_button', 'args' => [['status'],[$varible, false]]],
+			'role_id' => ['helper_function' => 'get_role_name', 'args' => [['role_id']]],
 		];
 		$this->_builder = $this->_db->table('pf_user_master s'); 
 		$this->_builder->join('pf_role_master r', 'r.role_id = s.role_id');
@@ -47,3 +47,11 @@ class User extends BaseController
 	}
 }
 ```
+#### `$editColumn` varible
+`$editColumn` variable is NOT mandatory.
+`$editColumn` should be an assosiative array.
+##### `$editColumn` key
+`$editColumn` key must be the column name we would like to change.
+##### `$editColumn` value
+`$editColumn` value should be an assosiative array.
+keys `helper_function` and `args` are MANDATORY. while `helper_function` value should be the helper function without `()`
