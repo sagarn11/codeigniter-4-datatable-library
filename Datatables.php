@@ -11,7 +11,6 @@
   * @version    0.7
   * @author     Sagar Nangare <sagar.nangare11@gmail.com>
   *             Akshay Nangare <akshay.nangare05@gmail.com>
-  * @link       http://codeigniter.com/forums/viewthread/160896/
   */
 namespace App\Libraries;
 
