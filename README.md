@@ -47,11 +47,12 @@ class User extends BaseController
 	}
 }
 ```
-#### `$editColumn` varible
+#### `$editColumn` variable
 `$editColumn` variable is NOT mandatory.
 `$editColumn` should be an assosiative array.
 ##### `$editColumn` key
 `$editColumn` key must be the column name we would like to change.
-##### `$editColumn` value
+##### `$editColumn` value 
 `$editColumn` value should be an assosiative array.
 keys `helper_function` and `args` are MANDATORY. while `helper_function` value should be the helper function without `()`
+The value stored in key `args` should be and Array of Array. With inner array's first value is column name from selected columns and second value is NOT mandatory as it requires to be set as `false` only if first value is not column name and needs to a value stored in variable or `NULL`
