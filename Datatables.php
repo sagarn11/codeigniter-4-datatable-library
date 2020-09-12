@@ -1,7 +1,5 @@
 <?php
   /**
-  * found at http://datatables.net/examples/data_sources/server_side.html for CodeIgniter
-  *
   * @package    CodeIgniter 4
   * @subpackage libraries
   * @category   library
