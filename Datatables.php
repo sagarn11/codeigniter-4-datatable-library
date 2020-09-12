@@ -1,14 +1,11 @@
 <?php
   /**
-  * Ignited Datatables
-  *
-  * This is a wrapper class/library based on the native Datatables server-side implementation by Allan Jardine
   * found at http://datatables.net/examples/data_sources/server_side.html for CodeIgniter
   *
-  * @package    CodeIgniter
+  * @package    CodeIgniter 4
   * @subpackage libraries
   * @category   library
-  * @version    0.7
+  * @version    0.1
   * @author     Sagar Nangare <sagar.nangare11@gmail.com>
   *             Akshay Nangare <akshay.nangare05@gmail.com>
   */
